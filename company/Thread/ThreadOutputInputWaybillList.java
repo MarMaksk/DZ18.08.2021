@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 public class ThreadOutputInputWaybillList implements Runnable {
     private Warehouse warehouse;
-    private boolean output = true;
+    private boolean output;
 
     public ThreadOutputInputWaybillList(Warehouse warehouse, boolean output) {
         this.warehouse = warehouse;
