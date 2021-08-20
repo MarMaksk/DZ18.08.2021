@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class ThreadOutputInputProductList implements Runnable {
     private volatile Warehouse warehouse;
-    private volatile boolean output = true;
+    private volatile boolean output;
     private volatile File file;
 
 
