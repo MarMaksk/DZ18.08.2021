@@ -11,6 +11,8 @@ public class ServiceCreateOutDoc implements Serializable {
     //Долго мучился но никак не смог избавиться от метода sleep. Если будет время то расскажите
     //И покажите как синхронизировать потоки. У меня и в тех практических заданиях это не вышло
     //Запись в файл никак не получается синхронизовать. А другое я не пробовал
+    
+    //В классах для потоков не выносил поля в абстрактный класс. Если вынести то синхронизировать ещё труднее
 
     public void createDocAboutWarehouse(Warehouse warehouse) {
         new Thread(new ThreadOutputInputProductList(warehouse, true)).start();
